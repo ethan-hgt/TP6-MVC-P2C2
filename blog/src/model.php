@@ -14,10 +14,9 @@ function getPosts() {
     $posts = [];
     while ($row = $statement->fetch()) {
         $post = [
-            'title' => $row['title'],
+            'title' => $row['titre'],
             'french_creation_date' => $row['french_creation_date'],
-            'content' => $row['content'],
-            'identifier' => $row['id'],
+            'content' => $row['contenu'],
         ];
         $posts[] = $post;
     }
